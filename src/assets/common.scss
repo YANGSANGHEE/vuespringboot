@@ -1,0 +1,70 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-left {
+    justify-content: flex-start;
+}
+.center-row {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnWrap {
+    width: 45%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    background: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 150px;
+    height: 45px;
+    &:hover {
+        background: none;
+        border: 1px solid cadetblue;
+        color: cadetblue;
+        cursor: pointer;
+    }
+}
+#detail,
+#write {
+    width: 100vw;
+    height: 100vh;
+    .btnList {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .boardCon {
+        width: 60%;
+        padding: 50px 50px;
+        h1,
+        p,
+        span {
+            padding: 10px;
+        }
+        span {
+            display: block;
+            width: 80px;
+        }
+        p {
+            height: 200px;
+        }
+        input[type='text'] {
+            width: 80%;
+            height: 30px;
+        }
+        textarea {
+            width: 80%;
+            height: 500px;
+        }
+    }
+}
