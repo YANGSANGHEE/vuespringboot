@@ -80,7 +80,7 @@ export default {
                 return false;
             }
             await axios
-                .post('http://localhost:8084/board/mergeBoard', {
+                .post('http://localhost:8081/board/mergeBoard', {
                     seq: this.getseq,
                     content: content,
                     title: title,
@@ -101,7 +101,7 @@ export default {
         },
         async getData() {
             await axios
-                .post('http://localhost:8084/board/selectBoardDetail', {
+                .post('http://localhost:8081/board/selectBoardDetail', {
                     seq: this.getseq,
                 })
                 .then((res) => {

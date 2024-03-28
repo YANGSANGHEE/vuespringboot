@@ -85,7 +85,7 @@ export default {
                 this.page = val;
             }
             this.boardData = await axios
-                .post('http://localhost:8084/board/selectBoardList', {
+                .post('http://localhost:8081/board/selectBoardList', {
                     pageOffset: val != null && val != '' ? val : 0,
                     keyword: this.title != null && val != '' ? this.title : '',
                 })

@@ -31,7 +31,7 @@ export default {
     methods: {
         async getData() {
             this.boardDetail = await axios
-                .post('http://localhost:8084/board/selectBoardDetail', {
+                .post('http://localhost:8081/board/selectBoardDetail', {
                     seq: this.seq,
                 })
                 .then((res) => {
@@ -50,7 +50,7 @@ export default {
         delBoard() {
             try {
                 axios
-                    .post('http://localhost:8084/board/mergeBoard', {
+                    .post('http://localhost:8081/board/mergeBoard', {
                         seq: this.$route.query.seq,
                         delYn: 'Y',
                     })
